@@ -1,10 +1,10 @@
 //DanW
 //Called from Multi Level Tokens...
 //console.log(region);
-let trapToken = canvas.drawings.placeables.find(t=>t.id === region.data.id);
+let trapToken = canvas.drawings.placeables.find(t=>t.id === region.data._id);
 if(trapToken)
 {
-  //console.log("found trap");
+  console.log("found trap");
   trapToken.update({"hidden" : false});
   let chatData = {
            user: game.user._id,
